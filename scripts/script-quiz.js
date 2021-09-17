@@ -16,7 +16,7 @@ function calculateScore() {
         index = index + 1;
     }
     console.log(score); 
-    showQuizResult.innerText = "Your score is " + score; 
+    showQuizResult.innerText = `Your score is ${score}`; 
 }
 
 submitQuiz.addEventListener("click", calculateScore);
