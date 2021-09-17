@@ -6,40 +6,37 @@ console.log("started");
 // let angle3 = document.querySelector("#angle3"); 
 let allAngles = document.querySelectorAll(".angle");
 let isTriangle = document.querySelector("#btn-checkTri");
+let showOutput = document.querySelector("#showOutput");  
 
+let myArray = [];
 
+function extractNumber() {
+    for (let i=0; i < allAngles.length; i++) {
+       let x=  Number(allAngles[i].value); 
+       console.log(typeof(x) + "" + x); 
+       myArray.push(x); 
+    }
+    console.log(myArray);
+}
 
-
-// function checkTriangle() {
-//     for (let i=0; i < allAngles.length; i++) {
-//         allAngles[i] = Number(allAngles[i]);
-//         // console.log(allAngles[i].value);  
-//     //    Number(allAngles[i].value) ;
-//         let sumOfAngles = 0;
-//         sumOfAngles = sumOfAngles + allAngles[i].value;    
-//         return sumOfAngles;      
-//         console.log(sumOfAngles + " is sum of angles");
-//     }   
-// }
 
 
 function calculateSumOfAngles() {
-    console.log(allAngles[0].value); 
-    let x=  Number(allAngles[0].value);
-    console.log(typeof(x));
-
-    // let angleArray = [];
-    // angleArray.push(allAngles.value); 
-    // console.log(angleArray); 
-
-    // for (let i =0; i < allAngles.length; i++) {
-    //     Number(allAngles.value);
-    //     let sum = 0;
-    //     sum = sum + allAngles[i].value ;  
-    //     return sum; 
-    //     console.log("sume is " + sum);       
-    // }
+    // console.log(allAngles[0].value); 
+    // let x=  Number(allAngles[0].value);
     
+    // console.log(typeof(x));
+
+    for (let i =0; i < allAngles.length; i++) {
+        let y = Number(allAngles[i].value);
+        // console.log("type of " +  allAngles[i].value + "is "  + typeof(y)); 
+        let sum = 0;
+        sum = sum + y ;      
+        console.log(sum + " is the sum");
+    }   
+     
 }
 
-isTriangle.addEventListener("click", calculateSumOfAngles);
+isTriangle.addEventListener("click", extractNumber );
+
+// calculateSumOfAngles
