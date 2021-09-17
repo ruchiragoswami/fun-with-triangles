@@ -33,3 +33,14 @@ p {
     padding: 0.8rem;
     width: 150px; 
 }
+
+/* Hypotenuse Page Styles */
+
+.main-container>div{
+    margin: 1rem; 
+}
+
+#btn-hypo {
+    padding: 1rem; 
+    
+}
