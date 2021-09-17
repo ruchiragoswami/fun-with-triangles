@@ -3,6 +3,33 @@ body {
     text-align: center;
 }
 
+.main-container {
+    max-width: 900px;
+    margin: 0 auto; 
+    border: 1px solid firebrick;
+}
+
 .userInp   {
     margin: 1rem;
+}
+
+
+/* Quiz Page styles */
+
+p {
+    text-align: left;
+}
+
+.question {
+    text-align: left;
+    border: 2px solid gold; 
+    max-width: 400px;
+    margin: 0 auto; 
+
+}
+
+#submit-quiz {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    width: 150px; 
 }
