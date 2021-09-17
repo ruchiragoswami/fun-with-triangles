@@ -33,10 +33,13 @@ function calculateSumOfAngles(someArray, sum) {
     console.log("total is " + sum); 
 
     if (sum === 180) {
+        showOutput.innerText = "Yes Triangle";
         console.log("Triangle Yes");
     } else {
+        showOutput.innerText = "No, triangle"; 
         console.log("No"); 
     }
+    myArray = [];
 }
 
 isTriangle.addEventListener("click", extractNumber );
