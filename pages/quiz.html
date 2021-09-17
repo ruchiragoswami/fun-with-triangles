@@ -9,17 +9,15 @@
 </head>
 <body>
     <div class="main-container"> 
-    <h1> Triangle Quiz </h1>
+        <h1> Triangle Quiz </h1>
 
-
-    <form action="">
-        <div class="form-container">
+        <form action="" class="form-container">            
 
             <section> 
                 <p> 
                     What is the third angle for the trainlge where angle 1= 45&deg and angle 2 = 45&deg 
                 </p>   
-                 
+                
                 <div class="question"> 
                     <input id="q1-1" type="radio" name="q1" value="45"/>
                     <label for="q1-1"> 45&deg </label>    
@@ -38,29 +36,23 @@
                 </p>
 
                 <div class="question"> 
-                    <input type="radio" id="q2-1" value="obtuse" />
+                    <input type="radio" id="q2-1" name="q2" value="obtuse" />
                     <label for="q2-1"> Obtuse </label>
                     <br>                
-                    <input type="radio" id="q2-2" value="acute" />
+                    <input type="radio" id="q2-2" name="q2" value="acute" />
                     <label for="q2-2" > Acute </label>
                     <br>
-                    <input type="radio" id="q2-3" value="right"> 
+                    <input type="radio" id="q2-3" name="q2" value="right"> 
                     <label for="q2-3"> Right angled </label>
                 </div>
 
-            </section>
-
-
+            </section>           
             
-        </div>
- 
-        <!-- <button>sub </button> -->
-        <input id="submit-quiz" type="button" value="Submit" />
+            <input id="btn-submitQuiz"  type="button" value="Submit" />
 
-
-    </form>
-
-    <h2 id="quizOutput"></h2>
+        </form>
+        
+        <h2 id="quizOutput"></h2>
 
     </div>
     <script src="../scripts/script-quiz.js"></script>
