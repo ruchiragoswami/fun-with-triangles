@@ -24,9 +24,9 @@ function calculateSumOfAngles(someArray, sum) {
 
     if (sum === 180) {
         showOutput.innerText = "Yes Triangle";
-        console.log("Triangle Yes");
+        console.log("Yes, these angles will form a triangle!");
     } else {
-        showOutput.innerText = "No, triangle"; 
+        showOutput.innerText = "Sorry, triangle can't be formed"; 
         console.log("No"); 
     }
     myArray = [];
