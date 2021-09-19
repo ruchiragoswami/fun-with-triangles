@@ -10,33 +10,32 @@
 </head>
 
 <body>
-    <header>        
-        <nav> 
-            <ul>
-                <li><a href="../index.html"> Is Triangle </a></li>
-                <li><a href="quiz.html"> Quiz </a></li>
-                <li><a href="#0"> Hypotenuse </a></li>
-                <li><a href="area.html"> Area </a></li>
-            </ul>
-        </nav>    
-    </header>
-
-    <div class="main-container">     
+    <div class="main-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html"> Is Triangle </a></li>
+                    <li><a href="quiz.html"> Quiz </a></li>
+                    <li><a href="#0"> Hypotenuse </a></li>
+                    <li><a href="area.html"> Area </a></li>
+                </ul>
+            </nav>
+        </header>
 
         <h1> Hypotenuse </h1>
         <h2> Enter length for each side </h2>
 
-        <div>
+        <div class="userInp">
             <label for="side-1"> Side 1 </label>
-            <input id="side-1" type="number" />
+            <input id="side-1" class="angle" type="number" />
         </div>
 
-        <div>
+        <div class="userInp">
             <label for="side-2"> Side 2 </label>
-            <input id="side-2" type="number" />
+            <input id="side-2" class="angle" type="number" />
         </div>
 
-        <button id="btn-hypo"> Calculate </button>
+        <button id="btn-hypo" class="allBtn"> Calculate </button>
 
         <h2 id="output-hypo"></h2>
 
