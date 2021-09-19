@@ -23,11 +23,11 @@ function calculateSumOfAngles(someArray, sum) {
     // console.log("total is " + sum); 
 
     if (sum === 180) {
-        showOutput.innerText = "Yes Triangle";
-        console.log("Yes, these angles will form a triangle!");
+        showOutput.innerText = "Yes, these angles will form a triangle!";
+        // console.log("Yes, these angles will form a triangle!");
     } else {
         showOutput.innerText = "Sorry, triangle can't be formed"; 
-        console.log("No"); 
+        // console.log("No"); 
     }
     myArray = [];
 }
