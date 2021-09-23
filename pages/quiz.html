@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body>    
+<body>
     <div class="main-container">
-        <header>                     
-            <nav> 
+        <header>
+            <nav>
                 <ul>
                     <li><a href="../index.html"> Is Triangle </a></li>
                     <li><a href="#0"> Quiz </a></li>
                     <li><a href="hypo.html"> Hypotenuse </a></li>
                     <li><a href="area.html"> Area </a></li>
                 </ul>
-            </nav>    
+            </nav>
         </header>
 
-        
+
         <h1> Triangle Quiz </h1>
         <form action="" class="form-container">
             <section>
@@ -59,7 +59,44 @@
 
             </section>
 
-            <input id="btn-submitQuiz"  class="allBtn"   type="button" value="Submit" />
+            <section>
+                <p>
+                    What do you call a triangle whose all three sides are of different lengths?
+                </p>
+
+                <div class="question">
+                    <input type="radio" id="q3-1" name="q3" value="scalene" />
+                    <label for="q3-1"> Scalene </label>
+                    <br>
+                    <input type="radio" id="q3-2" name="q3" value="isosceles" />
+                    <label for="q3-2"> Isosceles </label>
+                    <br>
+                    <input type="radio" id="q3-3" name="q3" value="equilateral">
+                    <label for="q3-3"> Equilateral </label>
+                </div>
+
+            </section>
+
+            <section>
+                <p>
+                    How many sides are of same length in an isosceles triangle?
+                </p>
+
+                <div class="question">
+                    <input type="radio" id="q4-1" name="q4" value="three" />
+                    <label for="q4-1"> Three </label>
+                    <br>
+                    <input type="radio" id="q4-2" name="q4" value="two" />
+                    <label for="q4-2"> Two </label>
+                    <br>
+                    <input type="radio" id="q4-3" name="q4" value="none">
+                    <label for="q4-3"> None </label>
+                </div>
+
+            </section>
+
+
+            <input id="btn-submitQuiz" class="allBtn" type="button" value="Submit" />
 
         </form>
 
