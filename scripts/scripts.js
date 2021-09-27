@@ -7,12 +7,26 @@ let myArray = [];
 let sum = 0;
 
 function extractNumber() {
+    
+
     for (let i=0; i < allAngles.length; i++) {
-       let x=  Number(allAngles[i].value);       
-    //    console.log(typeof(x) + "" + x); 
-       myArray.push(x);     }
+        
+        let x=  Number(allAngles[i].value);       
+        //   console.log(typeof(x) + "" + x);                
+        myArray.push(x); 
+
+        for (let j=0; j < myArray.length; j++) {
+            if (j <= 0 || j == "") {
+                showOutput.innerText = "valid?";
+            } else {
+                calculateSumOfAngles(myArray, sum); 
+            }
+        }        
+        
+
+    }
     // console.log(myArray);
-    calculateSumOfAngles(myArray, sum); 
+    // calculateSumOfAngles(myArray, sum); 
 }
 
 
