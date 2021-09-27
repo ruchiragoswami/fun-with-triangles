@@ -7,41 +7,23 @@ let myArray = [];
 
 
 function extractNumber() {
+    let check = true;
     for (let i = 0; i < allAngles.length; i++) {
         if (allAngles[i].value <= 0 || allAngles[i].value === "") {
             console.log("valid?"); 
-            showOutput.innerText = "Valid?"                     
+            showOutput.innerText = "Valid?"      
+            check = false;               
             break; 
         } else {
             let x = Number(allAngles[i].value);
             myArray.push(x); 
-        }
-        calculateSumOfAngles(myArray);
+            console.log(myArray); 
+        }        
     }
+    if(check) calculateSumOfAngles(myArray);
 }
 
-     // function extractNumber() {
-
-
-     //     for (let i=0; i < allAngles.length; i++) {
-
-     //         let x=  Number(allAngles[i].value);       
-     //         //   console.log(typeof(x) + "" + x);                
-     //         myArray.push(x); 
-
-     //         for (let j=0; j < myArray.length; j++) {
-     //             if (j <= 0 || j == "") {
-     //                 showOutput.innerText = "valid?";
-     //             } else {
-     //                 calculateSumOfAngles(myArray, sum); 
-     //             }
-     //         }        
-
-
-     //     }
-     //     // console.log(myArray);
-     //     // calculateSumOfAngles(myArray, sum); 
-     // }
+     
 
 
 function calculateSumOfAngles(someArray) {
