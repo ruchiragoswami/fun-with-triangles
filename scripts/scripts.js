@@ -3,27 +3,25 @@ let checkTriangle = document.querySelector("#btn-checkTri");
 let showOutput = document.querySelector("#showOutput");
 
 let myArray = [];
-// let sum = 0;
-
 
 function extractNumber() {
     let check = true;
     for (let i = 0; i < allAngles.length; i++) {
         if (allAngles[i].value <= 0 || allAngles[i].value === "") {
-            console.log("valid?"); 
-            showOutput.innerText = "Valid?"      
-            check = false;               
-            break; 
+         
+            showOutput.innerText = "Please enter valid inputs!";
+            check = false;
+            break;
         } else {
             let x = Number(allAngles[i].value);
-            myArray.push(x); 
-            console.log(myArray); 
-        }        
+            myArray.push(x);
+            console.log(myArray);
+        }
     }
-    if(check) calculateSumOfAngles(myArray);
+    if (check) calculateSumOfAngles(myArray);
 }
 
-     
+
 
 
 function calculateSumOfAngles(someArray) {
@@ -32,14 +30,13 @@ function calculateSumOfAngles(someArray) {
     for (let i = 0; i < someArray.length; i++) {
         sum = sum + someArray[i];
     }
-    // console.log("total is " + sum); 
 
     if (sum === 180) {
         showOutput.innerText = "Yes, these angles will form a triangle!";
-        // console.log("Yes, these angles will form a triangle!");
+
     } else {
         showOutput.innerText = "Sorry, triangle can't be formed";
-        // console.log("No"); 
+
     }
     myArray = [];
 }
