@@ -2,7 +2,7 @@ let selectForm = document.querySelector(".form-container");
 let submitQuiz = document.querySelector("#btn-submitQuiz");
 let showQuizResult = document.querySelector("#quizOutput");
 
-const correctAnswers = ['90', 'right', 'scalene', 'two' ]; 
+const correctAnswers = ['90', 'right', 'scalene', 'two', 'Pythagoras', 'Polygon' , '45', 'long', 'three', 'angle']; 
 
 function calculateScore() {
     // event.preventDefault();
